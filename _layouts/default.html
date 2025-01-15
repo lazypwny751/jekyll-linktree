@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}>
+	{%- include head.html -%}
+<body>
+	<div class="container">
+	    <div class="profile-wrapper">
+	    	{% if page.avatar %}
+				<img src="{{ page.avatar }}" alt="Avatar">
+			{% else %}
+				<img src="/assets/img/orangecat.jpeg" alt="Default Avatar">
+			{% endif %}
+	    </div>
+
+		<h1>{{ page.mahlas | default: "Orange Car" }}</h1>
+		<p>{{ content }}</p>
+
+		<div class="social-container">
+		  {% if page.instagram %}
+		    {% for i in page.instagram %}
+		      <div class="social-icon instagram">
+		        <a href="https://www.instagram.com/{{ i }}" target="_blank">Instagram user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.linkedin %}
+		    {% for i in page.linkedin %}
+		      <div class="social-icon linkedin">
+		        <a href="https://www.linkedin.com/in/{{ i }}" target="_blank">LinkedIn user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.facebook %}
+		    {% for i in page.facebook %}
+		      <div class="social-icon facebook">
+		        <a href="https://www.facebook.com/{{ i }}" target="_blank">Facebook user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.telegram %}
+		    {% for i in page.telegram %}
+		      <div class="social-icon telegram">
+		        <a href="https://t.me/{{ i }}" target="_blank">Telegram user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.discord %}
+		    {% for i in page.discord %}
+		      <div class="social-icon discord">
+		        <a href="https://discord.com/users/{{ i }}" target="_blank">Discord user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.twitter %}
+		    {% for i in page.twitter %}
+		      <div class="social-icon twitter">
+		        <a href="https://twitter.com/{{ i }}" target="_blank">Twitter user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.youtube %}
+		    {% for i in page.youtube %}
+		      <div class="social-icon youtube">
+		        <a href="https://www.youtube.com/c/{{ i }}" target="_blank">YouTube user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.github %}
+		    {% for i in page.github %}
+		      <div class="social-icon github">
+		        <a href="https://github.com/{{ i }}" target="_blank">GitHub user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.twitch %}
+		    {% for i in page.twitch %}
+		      <div class="social-icon twitch">
+		        <a href="https://www.twitch.tv/{{ i }}" target="_blank">Twitch user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.matrix %}
+		    {% for i in page.matrix %}
+		      <div class="social-icon matrix">
+		        <a href="https://matrix.to/#/{{ i }}" target="_blank">Matrix user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.tiktok %}
+		    {% for i in page.tiktok %}
+		      <div class="social-icon tiktok">
+		        <a href="https://www.tiktok.com/@{{ i }}" target="_blank">TikTok user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.reddit %}
+		    {% for i in page.reddit %}
+		      <div class="social-icon reddit">
+		        <a href="https://www.reddit.com/user/{{ i }}" target="_blank">Reddit user: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+
+		  {% if page.site %}
+		    {% for i in page.site %}
+		      <div class="social-icon site">
+		        <a href="{{ i }}" target="_blank">Site URL: {{ i }}</a>
+		      </div>
+		    {% endfor %}
+		  {% endif %}
+		</div>
+	</div>
+
+	{%- include footer.html -%}
+</body>
+</html>
