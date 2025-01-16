@@ -1,6 +1,6 @@
 # jekyll-linktree
 
-![image](https://github.com/user-attachments/assets/7465bb83-3648-47e7-8de6-112859f80f47)
+![image](https://github.com/user-attachments/assets/ce82c7b6-048e-450c-a54d-a4bb4da4a1dc)
 
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
