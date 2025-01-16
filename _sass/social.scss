@@ -2,138 +2,137 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  margin-top: 20px;
+  gap: 15px;
   width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
 }
 
 .social-icon {
-  position: relative;
-  width: 280px;
-  height: 100px;
-  border-radius: 8px;
-  color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 1.2em;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 280px;
+  height: 50px;
+  color: white;
+  font-size: 1em;
   cursor: pointer;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  transition: all 0.3s ease;
-  transform-origin: center;
-
-  a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    z-index: 1;
-    transition: color 0.3s ease;
-  }
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin: 5px 0;
+  background: linear-gradient(to right, rgba(255, 255, 0, 0.8), rgba(255, 0, 0, 0.8));
 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    animation: pulseEffect 1s infinite;
   }
 
-  &.instagram {
-    background-color: #E4405F;
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid white;
   }
 
-  &.linkedin {
-    background-color: #0077B5;
+  .icon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(1.5);
   }
 
-  &.facebook {
-    background-color: #1877F2;
+  .separator {
+    width: 1px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  &.telegram {
-    background-color: #0088cc;
-  }
-
-  &.discord {
-    background-color: #7289DA;
-  }
-
-  &.twitter {
-    background-color: #1DA1F2;
-  }
-
-  &.youtube {
-    background-color: #FF0000;
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    max-width: calc(100% - 60px);
   }
 
   &.github {
-    background-color: #333333;
+    background: linear-gradient(to right, #444444, #333333);
+  }
+
+  &.instagram {
+    background: linear-gradient(to right, #F58529, #E4405F);
+  }
+
+  &.linkedin {
+    background: linear-gradient(to right, #006B71, #0077B5);
+  }
+
+  &.facebook {
+    background: linear-gradient(to right, #4B87D1, #1877F2);
+  }
+
+  &.telegram {
+    background: linear-gradient(to right, #1F8EC1, #0088cc);
+  }
+
+  &.discord {
+    background: linear-gradient(to right, #5D4F8A, #7289DA);
+  }
+
+  &.twitter {
+    background: linear-gradient(to right, #00ACEE, #1DA1F2);
+  }
+
+  &.youtube {
+    background: linear-gradient(to right, #FF3D00, #FF0000);
   }
 
   &.twitch {
-    background-color: #9146FF;
+    background: linear-gradient(to right, #6A2D91, #9146FF);
   }
 
   &.matrix {
-    background-color: #00FF00;
+    background: linear-gradient(to right, #5F99F7, #00FF00);
   }
 
   &.tiktok {
-    background-color: #69C9D0;
+    background: linear-gradient(to right, #28A2B6, #69C9D0);
   }
 
   &.reddit {
-    background-color: #FF4500;
+    background: linear-gradient(to right, #FF7300, #FF4500);
   }
 
   &.site {
-    background-color: #2F80ED;
+    background: linear-gradient(to right, #5F99F7, #2F80ED);
   }
 
-  & > a {
-    padding: 0 15px;
-    max-width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-}
-
-@keyframes pulseEffect {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  50% {
-    transform: scale(1.1);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-}
-
-@media (max-width: 768px) {
-  .social-icon {
-    width: 250px;
-    height: 90px;
-    font-size: 1em;
+  @media (max-width: 768px) {
+    .social-icon {
+      width: 250px;
+      height: 45px;
+    }
   }
 
-  .social-container {
-    gap: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .social-icon {
-    width: 230px;
-    height: 80px;
-    font-size: 0.9em;
-  }
-
-  .social-container {
-    gap: 10px;
+  @media (max-width: 480px) {
+    .social-icon {
+      width: 230px;
+      height: 40px;
+    }
   }
 }
