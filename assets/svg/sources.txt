@@ -1,0 +1,13 @@
+discord.svg 	=> https://www.svgrepo.com/download/353655/discord-icon.svg
+instagram.svg 	=> https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg
+linkedin.svg 	=> https://www.svgrepo.com/download/110195/linkedin.svg
+facebook.svg 	=> https://www.svgrepo.com/download/475647/facebook-color.svg
+telegram.svg 	=> https://www.svgrepo.com/download/299513/telegram.svg
+twitter.svg	 	=> https://www.svgrepo.com/download/452123/twitter.svg
+youtube.svg 	=> https://www.svgrepo.com/download/475700/youtube-color.svg
+github.svg 		=> https://www.svgrepo.com/download/448447/github.svg
+twitch.svg		=> https://www.svgrepo.com/download/109411/twitch.svg
+matrix.svg 		=> https://www.svgrepo.com/download/330901/matrix.svg
+tiktok.svg 		=> https://www.svgrepo.com/download/349530/tiktok.svg
+reddit.svg 		=> https://www.svgrepo.com/download/452094/reddit.svg
+site.svg 		=> https://www.svgrepo.com/download/503094/site.svg
