@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-linktree"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["lazypwny751"]
 
   spec.summary       = "Simple link tree theme for social media links."
